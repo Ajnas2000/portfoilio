@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #000000;
+}
+img{
+    max-width: 100%;
+}
+.main-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+    transition: 0.3s;
+}
+.main-header .navbar{
+   padding: 15px 0;
+}
+.main-header .navbar-nav li{
+    padding:0 10px ;
+    
+}
+.main-header .navbar-nav .nav-link{
+    padding: 0 5px;
+    font-weight: 600;
+    color: black;
+    
+}
+.main-header .navbar-nav .nav-link:hover{
+    color: chartreuse;
+
+}
+@media (max-width:991px){
+   .main-header .navbar-collapse{
+    border-bottom:2px solid red;
+    border-top: 2px solid red;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background:rgb(223, 242, 255);
+   }
+
+    .main-header .navbar-nav .nav-link{
+        line-height: 50px;
+    }
+
+    .main-header .navbar-toggler{
+        display: flex;
+        flex-direction: column;
+        border:none;
+        padding:2px;
+        box-shadow: none;
+        color: black;
+        text-decoration: none;
+        outline: none;
+        font-weight: 400;
+    }
+    .main-header .navbar-toggler:focus{
+        outline: none;
+        border: none ;
+        box-shadow: none;
+    }
+}
+.colored-btn{
+    color: rgb(16, 235, 31);
+    text-decoration: none;
+    font-weight: 600;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius:60%;
+}
+.colored-btn:hover{
+    color: rgb(25, 12, 212);
+}
+.bg-gray{
+    background-color: rgba(254,196,72,0.3);
+}
+.bg-dark{
+    background-color:blueviolet ;
+}
+main{
+    position: relative;
+    z-index:-1;
+}
+.home-section{
+    position: relative;
+    overflow: hidden;
+    padding-top: 100px;
+    padding-bottom:100px;
+
+}
+@media (max-width:767px) {
+    .home-section{
+        padding-bottom: 70px;
+        
+
+    }
+    
+}
+.home-section .container{
+    position: relative;
+    z-index: 1;
+}
+.home-section .home-intro h6{
+    font-weight: 600;
+    color: blue;
+    letter-spacing: 3px;
+    font-size: 16px;
+    margin:0 0 30px;
+
+}
+@media (max-width:767px) {
+    .home-section .home-intro h6{
+        margin:0 0 20px;
+        
+    }
+    
+}
+.home-section .home-intro h1{
+    font-size: 70px;
+    font-weight: 600;
+    color: chartreuse;
+    margin: 0 0 35px;
+    line-height: 1;
+}
+@media (max-width:767px){
+    .home-section .home-intro h1{
+        margin: 0 0 25px;
+        font-size: 45px;
+
+    }
+} 
+.home-image img{
+    height: 450px;
+    width: 450px;
+    object-fit: cover;
+    border-radius:50%;
+    border: 2px solid black;
+    position: relative;
+    z-index: -2;
+}
+@media (max-width:767px){
+    .home-image img{
+        height: 300px;
+        width: 300px;
+    }
+} 
+.section{
+    padding: 80px 0;
+    position: relative;
+}
+@media (max-width:767px) {
+    .section{
+        padding: 60px 0 ;
+    }
+    
+}.about-text p{
+    font-size: 18px;
+
+}
+.section-heading{
+    padding-bottom: 60px;
+    text-align: center;
+}
+@media (max-width:767px) {
+    .section-heading{
+        padding-bottom: 30px;
+    }
+}  
+.section-heading h3{
+    font-size: 50px;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 4px;
+}  
+@media (max-width:767px) {
+    .section-heading h3{
+        font-size: 38px;
+    }
+}.feature-box{
+    padding: 40px;
+    border: 2px solid black;
+    background-color: aqua;
+
+    display: flex;
+}
+@media (max-width:767px) {
+    .feature-box{
+     padding: 30px;
+    }
+}.feature-box .content{
+    max-width: calc(100%-70px);
+    padding-left: 20px;
+}
+.feature-box h5{
+    font-size: 24px;
+    color: black;
+    font-weight: 600;
+    margin-bottom:10px;
+}
+@media (max-width:767px) {
+    .feature-box h5{
+        font-size: 22px;
+    }
+}
+.feature-box p{
+    margin: 0;
+    font-size: 17px;
+}
+.bg{
+    background-color: red;
+}
+.portfolio-box .portfolio-img{
+    position: relative;
+    border:2px solid black;
+
+}
+.Contact-form{
+    position: relative;
+    border: 2px solid red;
+    padding: 35px;
+    background-color: white;
+   
+
+
+}
+@media(max-width:767px){
+    .Contact-form{
+        
+        padding: 25px;
+    }
+       
+
+}
+.Contact-form-.lead{
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0 0 30px;
+
+}
+.Contact-form .form-control{
+    border-radius: 0;
+    border: 1px solid blue;
+    padding: 0.575rem .75rem;
+}
